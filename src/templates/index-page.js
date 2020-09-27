@@ -6,7 +6,9 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
-import * as colors from "../../src/components/all.sass"
+// import * as colors from "../../src/components/all.sass"
+
+import SassHelper from "../services/sass-helper"
 
 export const IndexPageTemplate = ({
   image,
@@ -24,7 +26,7 @@ export const IndexPageTemplate = ({
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
             })`,
-          backgroundPosition: `top left`,
+          backgroundPosition: `center`,
           backgroundAttachment: `fixed`,
         }}
       >
@@ -42,8 +44,8 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-text-centered"
             style={{
               boxShadow:
-                `${colors.kaldiRed} 0.5rem 0px 0px, ${colors.kaldiRed} -0.5rem 0px 0px`,
-              backgroundColor: colors.kaldiRed,
+                `${SassHelper.readProperty("kaldiRed")} 0.5rem 0px 0px, ${SassHelper.readProperty("kaldiRed")} -0.5rem 0px 0px`,
+              backgroundColor: SassHelper.readProperty("kaldiRed"),
               color: 'white',
               lineHeight: '1',
               padding: '0.25em',
@@ -55,8 +57,8 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen has-text-centered"
             style={{
               boxShadow:
-                '#9a9494 0.5rem 0px 0px, #9a9494 -0.5rem 0px 0px',
-              backgroundColor: '#9a9494',
+                `${SassHelper.readProperty("kaldiRed")} 0.5rem 0px 0px, ${SassHelper.readProperty("kaldiRed")} -0.5rem 0px 0px`,
+              backgroundColor: SassHelper.readProperty("kaldiRed"),
               color: 'white',
               lineHeight: '1',
               padding: '0.25em',
