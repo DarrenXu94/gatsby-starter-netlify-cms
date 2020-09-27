@@ -44,8 +44,8 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-text-centered"
             style={{
               boxShadow:
-                `${SassHelper.readProperty("kaldiRed")} 0.5rem 0px 0px, ${SassHelper.readProperty("kaldiRed")} -0.5rem 0px 0px`,
-              backgroundColor: SassHelper.readProperty("kaldiRed"),
+                `#9a9494 0.5rem 0px 0px, #9a9494 -0.5rem 0px 0px`,
+              backgroundColor: '#9a9494',
               color: 'white',
               lineHeight: '1',
               padding: '0.25em',
@@ -57,8 +57,8 @@ export const IndexPageTemplate = ({
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen has-text-centered"
             style={{
               boxShadow:
-                `${SassHelper.readProperty("kaldiRed")} 0.5rem 0px 0px, ${SassHelper.readProperty("kaldiRed")} -0.5rem 0px 0px`,
-              backgroundColor: SassHelper.readProperty("kaldiRed"),
+                `#9a9494 0.5rem 0px 0px, #9a9494 -0.5rem 0px 0px`,
+              backgroundColor: '#9a9494',
               color: 'white',
               lineHeight: '1',
               padding: '0.25em',
