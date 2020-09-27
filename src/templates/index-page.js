@@ -8,8 +8,6 @@ import BlogRoll from '../components/BlogRoll'
 
 // import * as colors from "../../src/components/all.sass"
 
-import SassHelper from "../services/sass-helper"
-
 export const IndexPageTemplate = ({
   image,
   title,

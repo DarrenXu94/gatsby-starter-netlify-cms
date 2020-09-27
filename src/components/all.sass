@@ -10,18 +10,6 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
-$prefix: "--" // Prefix string for custom CSS properties
-
-// Merges a variable name with $prefix
-@function custom-property-name($name)
-  @return $prefix + $name
-
-@mixin define-custom-property($name, $value)
-  #{custom-property-name($name)}: $value
-
-body
-  @include define-custom-property('kaldiRed', $kaldi-red)
-
 .navbar .navbar-menu
   box-shadow: none !important
 
