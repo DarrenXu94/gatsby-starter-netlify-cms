@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Choccy ratings with Daz
-image: /img/home-jumbotron.jpg
+image: /img/pexels-jumbo.jpg
 heading: Great coffee with a conscience
 subheading: Enjoy some hard hitting chocolate reviews
 mainpitch:
