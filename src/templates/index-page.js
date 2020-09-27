@@ -6,6 +6,8 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import * as colors from "../../src/components/all.sass"
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -37,11 +39,11 @@ export const IndexPageTemplate = ({
           }}
         >
           <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-text-centered"
             style={{
               boxShadow:
-                '#9a9494 0.5rem 0px 0px, #9a9494 -0.5rem 0px 0px',
-              backgroundColor: '#9a9494',
+                `${colors.kaldiRed} 0.5rem 0px 0px, ${colors.kaldiRed} -0.5rem 0px 0px`,
+              backgroundColor: colors.kaldiRed,
               color: 'white',
               lineHeight: '1',
               padding: '0.25em',
@@ -64,7 +66,7 @@ export const IndexPageTemplate = ({
           </h3>
         </div>
       </div>
-      <section className="section section--gradient">
+      <section className=" section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">

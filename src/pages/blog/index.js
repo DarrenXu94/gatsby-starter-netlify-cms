@@ -3,6 +3,8 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
 
+import * as colors from "../../../src/components/all.sass"
+
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
@@ -16,8 +18,8 @@ export default class BlogIndexPage extends React.Component {
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: '#f40',
+              boxShadow: `0.5rem 0 0 ${colors.kaldiRed}, -0.5rem 0 0 ${colors.kaldiRed}`,
+              backgroundColor: colors.kaldiRed,
               color: 'white',
               padding: '1rem',
             }}
