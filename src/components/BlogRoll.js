@@ -8,6 +8,10 @@ class BlogRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
+    const removeImgAlt = (text) => {
+      return text.split("alt text")[1]
+    }
+
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -16,7 +20,7 @@ class BlogRoll extends React.Component {
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                  }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -43,7 +47,7 @@ class BlogRoll extends React.Component {
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
+                  {removeImgAlt(post.excerpt)}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>

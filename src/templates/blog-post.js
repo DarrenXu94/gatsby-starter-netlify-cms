@@ -6,6 +6,10 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
+const addClassToImg = (text) => {
+  return text.replace("<p><img src", "<p><img class='blogImg' src")
+}
+
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -26,7 +30,7 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <PostContent content={content} />
+            <PostContent content={addClassToImg(content)} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
