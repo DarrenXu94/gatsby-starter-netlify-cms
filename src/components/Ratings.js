@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactStars from "react-rating-stars-component";
 
+const icon = () => {
+    return <div>test</div>
+}
+
 const Ratings = ({ ratingTaste,
     ratingTexture,
     ratingPrice,
@@ -22,6 +26,7 @@ const Ratings = ({ ratingTaste,
                             edit={false}
                             size={24}
                             color="#a24121"
+                            char={"🍫"}
                         />
                     </span>
                     <div className="ratingsRow gridItem">
@@ -34,6 +39,7 @@ const Ratings = ({ ratingTaste,
                             edit={false}
                             size={24}
                             color="#a24121"
+                            char={"💸"}
                         />
                     </span>
                     <div className="ratingsRow gridItem">
@@ -46,6 +52,8 @@ const Ratings = ({ ratingTaste,
                             edit={false}
                             size={24}
                             color="#a24121"
+                            char={"😲"}
+
                         />
                     </span>
                     <div className="ratingsRow gridItem">
@@ -58,6 +66,8 @@ const Ratings = ({ ratingTaste,
                             edit={false}
                             size={24}
                             color="#a24121"
+                            char={"😍"}
+
                         />
                     </span>
                     <div className="ratingsRow gridItem">
@@ -70,6 +80,8 @@ const Ratings = ({ ratingTaste,
                             edit={false}
                             size={24}
                             color="#a24121"
+                            char={"🚀"}
+
                         />
                     </span>
                     {/* </div> */}
