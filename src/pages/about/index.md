@@ -15,5 +15,5 @@ I ain't made of money, but I am willing to splash for good quality.
 ### Mouth feel
 The mouth feel is a very underrated rating category. Chocolate these days have a variety of fillings inside the chocolate, some have popping candy and others have milk bottles. These can be both positive and detrimental towards the overall rating. I also hate it when you eat too much of a chocolate and you get a weird ass feeling in the back of your throat.
 
-### X factor
+### X Factor
 Nice packaging? Vegan? Funny shapes? All bonuses for me.

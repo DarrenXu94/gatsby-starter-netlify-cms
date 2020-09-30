@@ -120,12 +120,28 @@ $menu-label-color: $white-ter
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
+// Ratings
+.ratingsRow
+  display: flex
+  align-items: center
+
+.grid
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+
+.gridItem
+  background-color: #58371f21
+.gridItem:nth-child(5), .gridItem:nth-child(6), .gridItem:nth-child(7), .gridItem:nth-child(8)
+  background-color: #58371f40
+
 @import "~bulma"
 
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
+  .grid
+    grid-template-columns: 1fr 1fr
 
 +mobile
   .blog-list-item header
@@ -134,6 +150,18 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+  .grid
+    grid-template-columns: 1fr 1fr
+  .gridItem:nth-child(1),.gridItem:nth-child(2)
+    background-color: #58371f40
+  .gridItem:nth-child(3),.gridItem:nth-child(4)
+    background-color: #58371f21
+  .gridItem:nth-child(5),.gridItem:nth-child(6)
+    background-color: #58371f40
+  .gridItem:nth-child(7),.gridItem:nth-child(8)
+    background-color: #58371f21
+  .gridItem:nth-child(9),.gridItem:nth-child(10)
+    background-color: #58371f40
 
 .navbar-item img
   max-height: 3rem

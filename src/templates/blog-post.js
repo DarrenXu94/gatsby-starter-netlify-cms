@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Ratings from "../components/Ratings";
 
 const addClassToImg = (text) => {
   return text.replace("<p><img src", "<p><img class='blogImg' src")
@@ -15,6 +16,11 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   tags,
+  ratingTaste,
+  ratingTexture,
+  ratingPrice,
+  ratingMouthFeel,
+  ratingXFactor,
   title,
   helmet,
 }) => {
@@ -27,10 +33,17 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+              {title} {ratingTaste}
             </h1>
             <p>{description}</p>
             <PostContent content={addClassToImg(content)} />
+            <Ratings
+              ratingTaste={ratingTaste}
+              ratingTexture={ratingTexture}
+              ratingPrice={ratingPrice}
+              ratingMouthFeel={ratingMouthFeel}
+              ratingXFactor={ratingXFactor}
+            />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -56,6 +69,11 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  ratingTaste: PropTypes.number,
+  ratingTexture: PropTypes.number,
+  ratingPrice: PropTypes.number,
+  ratingMouthFeel: PropTypes.number,
+  ratingXFactor: PropTypes.number,
 }
 
 const BlogPost = ({ data }) => {
@@ -67,6 +85,11 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        ratingTaste={post.frontmatter.ratingTaste}
+        ratingTexture={post.frontmatter.ratingTexture}
+        ratingPrice={post.frontmatter.ratingPrice}
+        ratingMouthFeel={post.frontmatter.ratingMouthFeel}
+        ratingXFactor={post.frontmatter.ratingXFactor}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -100,6 +123,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        ratingTaste
+        ratingTexture
+        ratingPrice
+        ratingMouthFeel
+        ratingXFactor
         tags
       }
     }
