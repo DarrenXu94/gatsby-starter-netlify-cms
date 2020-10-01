@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Ratings from "../components/Ratings";
+import { DiscussionEmbed } from 'disqus-react';
 
 const addClassToImg = (text) => {
   return text.replace("<p><img src", "<p><img class='blogImg' src")
@@ -23,6 +24,7 @@ export const BlogPostTemplate = ({
   ratingXFactor,
   title,
   helmet,
+  id
 }) => {
   const PostContent = contentComponent || Content
 
@@ -43,6 +45,16 @@ export const BlogPostTemplate = ({
               ratingPrice={ratingPrice}
               ratingMouthFeel={ratingMouthFeel}
               ratingXFactor={ratingXFactor}
+            />
+            <DiscussionEmbed
+              shortname='example'
+              config={
+                {
+                  url: "https://www.choccy.darrenxu.com/",
+                  identifier: id,
+                  title: title,
+                }
+              }
             />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -74,14 +86,17 @@ BlogPostTemplate.propTypes = {
   ratingPrice: PropTypes.number,
   ratingMouthFeel: PropTypes.number,
   ratingXFactor: PropTypes.number,
+  id: PropTypes.string
 }
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  console.log(data)
 
   return (
     <Layout>
       <BlogPostTemplate
+        id={post.id}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
