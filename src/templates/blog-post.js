@@ -46,16 +46,19 @@ export const BlogPostTemplate = ({
               ratingMouthFeel={ratingMouthFeel}
               ratingXFactor={ratingXFactor}
             />
-            <DiscussionEmbed
-              shortname='choccy'
-              config={
-                {
-                  url: "https://www.choccy.darrenxu.com/",
-                  identifier: id,
-                  title: title,
+            <div style={{ paddingTop: "30px" }}>
+
+              <DiscussionEmbed
+                shortname='choccy'
+                config={
+                  {
+                    url: "https://www.choccy.darrenxu.com/",
+                    identifier: id,
+                    title: title,
+                  }
                 }
-              }
-            />
+              />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -91,7 +94,6 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  console.log(data)
 
   return (
     <Layout>
