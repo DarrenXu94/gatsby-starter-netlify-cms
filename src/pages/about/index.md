@@ -7,7 +7,7 @@ title: About my ratings
 The most important and obvious factor to rating choccy is the taste. I enjoy a smooth yet subtle flavor. Not too overwhelming but pleasant to eat plenty of.
 
 ### Texture
-For me, the texture cannot be bland but rather an exciting adventure to pertake in. The blocks of chocolate should not be too thick as to be a chore to eat, rather a more mangable and crunchable size.
+For me, the texture cannot be bland but rather an exciting adventure to partake in. The blocks of chocolate should not be too thick as to be a chore to eat, rather a more managable and crunchable size.
 
 ### Price
 I ain't made of money, but I am willing to splash for good quality.
