@@ -50,7 +50,7 @@ export const BlogPostTemplate = ({
               shortname='example'
               config={
                 {
-                  url: "https://www.choccy.darrenxu.com/",
+                  url: "https://www.choccy.darrenxu.com/blog/2020-09-26-test-blog/",
                   identifier: id,
                   title: title,
                 }
