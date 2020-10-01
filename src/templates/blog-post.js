@@ -47,10 +47,10 @@ export const BlogPostTemplate = ({
               ratingXFactor={ratingXFactor}
             />
             <DiscussionEmbed
-              shortname='example'
+              shortname='choccy'
               config={
                 {
-                  url: "https://www.choccy.darrenxu.com/blog/2020-09-26-test-blog/",
+                  url: "https://www.choccy.darrenxu.com/",
                   identifier: id,
                   title: title,
                 }
