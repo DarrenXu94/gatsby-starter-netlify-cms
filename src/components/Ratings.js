@@ -14,7 +14,9 @@ const Ratings = ({ ratingTaste,
         <div style={{ boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.1)", marginTop: "10px" }}>
             <div style={{ padding: "30px" }}>
                 <strong>
-                    Ratings
+                    <span>Ratings</span>
+                    <small>(Out of 5)</small>
+
                 </strong>
                 <div className="grid">
                     <div className="ratingsRow gridItem">
@@ -30,7 +32,7 @@ const Ratings = ({ ratingTaste,
                         />
                     </span>
                     <div className="ratingsRow gridItem">
-                        Price
+                        Price (affordability)
                     </div>
                     <span className="gridItem">
 
