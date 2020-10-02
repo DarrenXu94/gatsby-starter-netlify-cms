@@ -13,7 +13,7 @@ const Ratings = ({ ratingTaste,
     ratingXFactor }) => (
         <div style={{ boxShadow: "0px 0px 15px 0px rgba(0,0,0,0.1)", marginTop: "10px" }}>
             <div style={{ padding: "30px" }}>
-                <strong>
+                <strong style={{ display: "flex", flexDirection: "column" }}>
                     <span>Ratings</span>
                     <small>(Out of 5)</small>
 
