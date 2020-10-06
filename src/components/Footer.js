@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../img/ChoccyRatings.svg'
-import facebook from '../img/social/facebook.svg'
+import linkedin from '../img/social/linkedin.svg'
+import github from '../img/social/github.svg'
 import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
+import globe from '../img/social/globe.svg'
 import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
@@ -75,35 +76,29 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/darren-xu-profile/">
                   <img
-                    src={facebook}
-                    alt="Facebook"
+                    src={linkedin}
+                    alt="LinkedIn"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                <a title="Github" href="https://github.com/DarrenXu94">
                   <img
                     className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
+                    src={github}
+                    alt="Github"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="My Website" href="https://darrenxu.com">
                   <img
-                    src={instagram}
-                    alt="Instagram"
+                    src={globe}
+                    alt="globe"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+
               </div>
             </div>
           </div>
