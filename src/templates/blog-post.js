@@ -48,7 +48,8 @@ export const BlogPostTemplate = ({
               ratingXFactor={ratingXFactor}
             />
             <div style={{ paddingTop: "30px" }}>
-
+              {/* This is causing an error in the editor probably */}
+              {window.location.href}
               <DiscussionEmbed
                 shortname='choccy'
                 config={
