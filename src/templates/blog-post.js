@@ -9,7 +9,7 @@ import Ratings from "../components/Ratings";
 import { DiscussionEmbed } from 'disqus-react';
 
 const addClassToImg = (text) => {
-  if (typeof (text) != "string") return;
+  if (typeof (text) != "string") return text;
   return text.replace("<p><img src", "<p><img class='blogImg' src")
 }
 
@@ -56,7 +56,7 @@ export const BlogPostTemplate = ({
             />
             <div style={{ paddingTop: "30px" }}>
               {/* This is causing an error in the editor probably */}
-              {!windowUrl.includes("admin") &&
+              {(windowUrl != "" && !windowUrl.includes("admin")) &&
                 <DiscussionEmbed
                   shortname='choccy'
                   config={
