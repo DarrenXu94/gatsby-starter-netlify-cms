@@ -32,7 +32,6 @@ export const BlogPostTemplate = ({
   const [windowUrl, setwindowUrl] = useState("")
 
   useEffect(() => {
-    console.log(window.location.href)
     setwindowUrl(window.location.href)
 
   }, [])
@@ -57,17 +56,18 @@ export const BlogPostTemplate = ({
             />
             <div style={{ paddingTop: "30px" }}>
               {/* This is causing an error in the editor probably */}
-              {windowUrl}
-              <DiscussionEmbed
-                shortname='choccy'
-                config={
-                  {
-                    url: "https://www.choccy.darrenxu.com/",
-                    identifier: id,
-                    title: title,
+              {!windowUrl.includes("admin") &&
+                <DiscussionEmbed
+                  shortname='choccy'
+                  config={
+                    {
+                      url: "https://www.choccy.darrenxu.com/",
+                      identifier: id,
+                      title: title,
+                    }
                   }
-                }
-              />
+                />
+              }
             </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
