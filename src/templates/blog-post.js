@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
@@ -29,6 +29,14 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+  const [windowUrl, setwindowUrl] = useState("")
+
+  useEffect(() => {
+    console.log(window.location.href)
+    setwindowUrl(window.location.href)
+
+  }, [])
+
   return (
     <section className="section blogBg">
       {helmet || ''}
@@ -49,7 +57,7 @@ export const BlogPostTemplate = ({
             />
             <div style={{ paddingTop: "30px" }}>
               {/* This is causing an error in the editor probably */}
-              {window.location.href}
+              {windowUrl}
               <DiscussionEmbed
                 shortname='choccy'
                 config={
