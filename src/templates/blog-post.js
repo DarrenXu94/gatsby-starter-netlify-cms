@@ -9,6 +9,7 @@ import Ratings from "../components/Ratings";
 import { DiscussionEmbed } from 'disqus-react';
 
 const addClassToImg = (text) => {
+  if (!text) return;
   return text.replace("<p><img src", "<p><img class='blogImg' src")
 }
 
