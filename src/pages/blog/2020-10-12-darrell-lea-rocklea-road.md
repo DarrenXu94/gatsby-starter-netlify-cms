@@ -19,7 +19,7 @@ tags:
 Nice choccy flavours but nothing out of the ordinary. Marshmallows were a bit bland but the peanuts added some more spice. 
 
 ## Texture
-Marshmallows made it hard to chew, like having a jaw workout. Not for me.
+The block itself looks extremely unappealing, like muddy acne, from the marshmallows. Ripping the blocks apart feels gross because you are peeling apart blocks of marshmallows, not snapping bars of chocolate like a normal block. Marshmallows made it hard to chew, like having a jaw workout. Not for me.
 
 ## Price
 On special at Woolies, can't complain, could buy often.
