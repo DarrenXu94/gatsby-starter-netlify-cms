@@ -5,16 +5,18 @@ date: 2020-10-12T09:22:35.558Z
 description: The original and the best, Darrell Lea Rocklea Road. Hand crafted
   with smooth creamy Darrell Lea milk chocolate, toasted coconut, peanuts and
   marshmallows. It's irresistably good.
-ratingTaste: "3"
-ratingTexture: "2"
-ratingPrice: "4"
-ratingMouthFeel: "2"
-ratingXFactor: "3"
+ratingTaste: 3
+ratingTexture: 2
+ratingPrice: 4
+ratingMouthFeel: 2
+ratingXFactor: 3
 featuredpost: false
-featuredimage: /img/15198830166046.jpg
+featuredimage: /img/darrellearocklea.jpg
 tags:
   - darrellea chonky
 ---
+![alt text](/img/darrellearocklea.jpg)
+
 ## Taste
 Nice choccy flavours but nothing out of the ordinary. Marshmallows were a bit bland but the peanuts added some more spice. 
 

@@ -29,6 +29,8 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+  console.log(id, "ID")
+
   const [windowUrl, setwindowUrl] = useState("")
 
   useEffect(() => {
@@ -61,7 +63,7 @@ export const BlogPostTemplate = ({
                   shortname='choccy'
                   config={
                     {
-                      url: "https://www.choccy.darrenxu.com/",
+                      url: windowUrl,
                       identifier: id,
                       title: title,
                     }

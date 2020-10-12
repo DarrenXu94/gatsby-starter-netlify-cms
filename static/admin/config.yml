@@ -22,11 +22,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Rating Taste", name: "ratingTaste", widget: string}
-      - {label: "Rating Texture", name: "ratingTexture", widget: string}
-      - {label: "Rating Price", name: "ratingPrice", widget: string}
-      - {label: "Rating Mouth Feel", name: "ratingMouthFeel", widget: string}
-      - {label: "Rating X Factor", name: "ratingXFactor", widget: string}
+      - {label: "Rating Taste", name: "ratingTaste", widget: number}
+      - {label: "Rating Texture", name: "ratingTexture", widget: number}
+      - {label: "Rating Price", name: "ratingPrice", widget: number}
+      - {label: "Rating Mouth Feel", name: "ratingMouthFeel", widget: number}
+      - {label: "Rating X Factor", name: "ratingXFactor", widget: number}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
