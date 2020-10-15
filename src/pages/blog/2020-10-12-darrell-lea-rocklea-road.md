@@ -13,7 +13,8 @@ ratingXFactor: 3
 featuredpost: false
 featuredimage: /img/darrellearocklea.jpg
 tags:
-  - darrellea chonky
+  - darrellea
+  - chonky
 ---
 ![alt text](/img/darrellearocklea.jpg)
 
