@@ -3,6 +3,20 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/ChoccyRatings.svg'
 
+window.onscroll = function () {
+  var myNav = document.getElementById('mainNavbar');
+  console.log(myNav)
+  //   "use strict";
+  if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
+  }
+  else {
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
+  }
+};
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -38,6 +52,7 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
+        id="mainNavbar"
       >
         <div className="container">
           <div className="navbar-brand">
