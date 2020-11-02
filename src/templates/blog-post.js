@@ -39,7 +39,7 @@ export const BlogPostTemplate = ({
   }, [])
 
   return (
-    <section className="section blogBg">
+    <section className="section blogBackground" style={{ paddingTop: "80px" }}>
       {helmet || ''}
       <div className="container content" style={{ backgroundColor: "white", borderRadius: "5px" }}>
         <div className="columns">
