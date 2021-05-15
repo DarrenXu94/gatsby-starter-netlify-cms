@@ -15,6 +15,8 @@ featuredimage: /img/block-bundaberg-1.png
 tags:
   - smashable
 ---
+![whittakers](/img/block-bundaberg-1.png)
+
 Ginger beer and Whittaker's chocolate, two of my favourite things, but will they go well together?
 
 On my initial approach to consuming the chocolate I saw that it had a gooey caramel inside. This was a bit of a surprise to me and I was worried that the caramel flavours would be too overpowering. However, this was not the case. The initial bites of the chocolate had a strong ginger taste, but subsequent chews re-aligned the palate. The ginger did add a bit of a special X factor to the taste as I never had anything like it, but I'm not sure if it enhanced the experience. Either way, it was a bold move which I enjoyed.
