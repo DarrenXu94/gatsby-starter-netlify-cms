@@ -7,9 +7,11 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    // console.log({data})
 
     const removeImgAlt = (text) => {
-      return text.split("alt text")[1]
+      const split = text.split("![](<>)")
+      return split.length > 1 ? split[1] : split[0]
     }
 
     return (
@@ -80,7 +82,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(format: MARKDOWN)
               id
               fields {
                 slug
