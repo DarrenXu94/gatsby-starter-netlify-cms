@@ -15,6 +15,7 @@ featuredimage: /img/block-bundaberg-1.png
 tags:
   - smashable
 ---
+
 ![whittakers](/img/block-bundaberg-1.png)
 
 Ginger beer and Whittaker's chocolate, two of my favourite things, but will they go well together?
