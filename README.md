@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/12880cc1-c23a-4efa-bacb-16f6e805f410/deploy-status)](https://app.netlify.com/sites/choccy/deploys)
 
+[Live link](https://choccy.netlify.app/)
+
 # Created using Gatsby + Netlify CMS Starter
 
 **Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
