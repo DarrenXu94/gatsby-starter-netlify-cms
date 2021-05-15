@@ -14,7 +14,6 @@ const Navbar = class extends React.Component {
 
   runOnScrollFunction = () => {
     var myNav = document.getElementById('mainNavbar');
-    console.log(myNav)
     //   "use strict";
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
       myNav.classList.add("nav-colored");
